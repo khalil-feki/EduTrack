@@ -1,16 +1,31 @@
+<style>
+  .link {
+    @apply hover:opacity-70 transition underline px-5 py-2;
+  }
+</style>
 <nav>
   <div class="flex justify-between items-center p-5 text-lg">
     <div class="font-bold text-3xl"><a href="#">Edutrak</a></div>
     <div class="flex gap-5">
-      <a class="hover:opacity-70 transition underline px-5 py-2" href="#"><i class="fab fa-facebook-f"></i> Acceuil</a>
-      <a class="hover:opacity-70 transition underline px-5 py-2" href="#"><i class="fab fa-twitter"></i>Etudiant</a>
-      <a class="hover:opacity-70 transition underline px-5 py-2" href="#"><i class="fab fa-instagram"></i>Enseignant</a>
-      <a class="hover:opacity-70 transition underline px-5 py-2" href="#"><i class="fab fa-instagram"></i>Support</a>
-      <a class="hover:opacity-70 transition underline px-5 py-2" href="#"><i class="fab fa-instagram"></i>Ticket</a>
+      <a class="link" routerLink="/">Acceuil</a>
+      <a class="link" routerLink="/etudiant">Etudiant</a>
+      <a class="link" routerLink="/enseignant">Enseignant</a>
+      <a class="link" routerLink="/support">Support</a>
+      <a class="link" routerLink="/ticket">Ticket</a>
     </div>
     <div class="flex gap-3">
-      <button class="border px-4 py-2 rounded-sm text-white font-medium bg-green-500">Connexion</button>
-      <button class="border px-4 py-2 rounded-sm text-white font-medium bg-sky-500">Inscription</button>
+      <button
+        class="border px-4 py-2 rounded-sm text-white font-medium bg-green-500"
+        routerLink="/auth/login"
+      >
+        Connexion
+      </button>
+      <button
+        class="border px-4 py-2 rounded-sm text-white font-medium bg-sky-500"
+        routerLink="/auth/register"
+      >
+        Inscription
+      </button>
     </div>
   </div>
   <div class="menu-btn">
