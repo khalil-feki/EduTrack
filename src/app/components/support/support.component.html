@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edutrak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    
+
+    <!-- Chat Section -->
+    <section class="py-10 bg-gray-100" id="feedback.php">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-800">Chat</h2>
+          <p class="text-gray-600 mt-2">Vous avez une question ? Nous sommes toujours à votre disposition.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold text-gray-800">Retours d'utilisateurs</h3>
+            <div class="mt-4 space-y-6">
+              <div class="flex items-start space-x-4">
+                <i class="bx bx-user-circle text-indigo-600 text-2xl"></i>
+                <div>
+                  <p class="font-medium text-gray-800">Caroline</p>
+                  <p class="text-gray-600">
+                    Mon expérience avec ce site de freelance a été exceptionnelle à bien des égards. En tant qu'entrepreneur, j'ai trouvé ici une véritable pépinière de talents.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <i class="bx bx-user-circle text-indigo-600 text-2xl"></i>
+                <div>
+                  <p class="font-medium text-gray-800">Sami</p>
+                  <p class="text-gray-600">
+                    La communication avec les freelances s'est déroulée de manière fluide grâce aux outils intégrés sur la plateforme.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <i class="bx bx-user-circle text-indigo-600 text-2xl"></i>
+                <div>
+                  <p class="font-medium text-gray-800">Faten</p>
+                  <p class="text-gray-600">
+                    J'ai particulièrement apprécié la possibilité de parcourir les portfolios détaillés et les évaluations des freelances précédents.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback Form -->
+          <form>
+            <label for="feedback" class="block text-gray-700 font-medium mb-2">Posez votre question</label>
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="4"
+              placeholder="Votre feedback..."
+              class="w-full p-3 border rounded-md focus:ring-2 focus:ring-indigo-500"
+            ></textarea>
+            <div class="mt-4">
+              <button
+                type="submit"
+                class="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700"
+              >
+                Envoyer
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-white">
+          Created By <a href="#" class="text-indigo-400 hover:underline">Edutrak</a> | &#169; 2024 All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
