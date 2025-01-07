@@ -16,5 +16,5 @@ export const routes: Routes = [
   { path: 'auth/login', component: LoginComponent }, // Login route
   { path: 'enseignant', component: EnseignantComponent }, // Enseignant dashboard
   { path: 'etudiant', component: EtudiantComponent }, // Étudiant dashboard
-  { path: '**',component: NotfoundComponent }, // Wildcard route (fallback to login)
+  { path: '**',component: AcceuilComponent }, // Wildcard route (fallback to login)
 ];

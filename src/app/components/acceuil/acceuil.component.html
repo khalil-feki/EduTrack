@@ -1,4 +1,3 @@
-
 <div class="bg-gray-50 text-gray-800">
   <!-- Hero Section -->
   <div class="relative h-screen">
@@ -16,32 +15,86 @@
   <!-- Home Section -->
   <section id="home" class="flex items-center justify-center h-screen bg-gray-100">
     <div class="text-center">
-      <h1 class="text-4xl font-bold text-gray-900">Bonjour </h1>
+      <h1 class="text-4xl font-bold text-gray-900">Bonjour</h1>
       <p class="mt-4 text-xl text-gray-700">Ravi de vous revoir</p>
-      <a href="#services" class="mt-6 inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg shadow hover:bg-yellow-500">Consulter cours</a>
+      <a href="#services" class="mt-6 inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Consulter cours</a>
     </div>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="py-16 bg-gray-50">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Cours</h2>
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Nos Cours</h2>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+        <!-- Course 1 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition-all duration-300">
           <i class="fas fa-desktop text-4xl text-yellow-400"></i>
           <h3 class="mt-4 text-lg font-semibold"><a href="/cree-profile.html" class="hover:text-yellow-400">Développement Web</a></h3>
           <p class="mt-2 text-gray-600">Avancement</p>
         </div>
-        <!-- Repeat for other courses -->
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+        <!-- Course 2 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition-all duration-300">
           <i class="fas fa-paint-brush text-4xl text-yellow-400"></i>
           <h3 class="mt-4 text-lg font-semibold"><a href="/cree-profile.html" class="hover:text-yellow-400">Conception orienté objet</a></h3>
           <p class="mt-2 text-gray-600">Avancement</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+        <!-- Course 3 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition-all duration-300">
           <i class="fas fa-chart-line text-4xl text-yellow-400"></i>
           <h3 class="mt-4 text-lg font-semibold"><a href="/cree-profile.html" class="hover:text-yellow-400">Marketing</a></h3>
           <p class="mt-2 text-gray-600">Avancement</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Témoignages</h2>
+      <div class="flex justify-center space-x-12">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-sm">
+          <p class="text-gray-600">"Edutrak a transformé ma façon d'apprendre. Grâce à des cours pratiques et bien structurés, j'ai amélioré mes compétences en développement Web de manière significative."</p>
+          <div class="mt-6 text-right">
+            <p class="font-semibold">Pierre L.</p>
+            <p class="text-gray-500">Développeur Web</p>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-sm">
+          <p class="text-gray-600">"Les cours de marketing sont excellents ! Ils sont à la fois théoriques et pratiques, et m'ont aidé à trouver un emploi dans une entreprise de renom."</p>
+          <div class="mt-6 text-right">
+            <p class="font-semibold">Sophie M.</p>
+            <p class="text-gray-500">Spécialiste Marketing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-10">Nos Avantages</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Feature 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <i class="fas fa-cogs text-4xl text-yellow-400"></i>
+          <h3 class="mt-4 text-lg font-semibold">Formations Pratiques</h3>
+          <p class="mt-2 text-gray-600">Des cours conçus pour être appliqués dans des projets réels.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <i class="fas fa-users text-4xl text-yellow-400"></i>
+          <h3 class="mt-4 text-lg font-semibold">Tuteurs Expérimentés</h3>
+          <p class="mt-2 text-gray-600">Nos formateurs sont des experts dans leurs domaines respectifs.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <i class="fas fa-clock text-4xl text-yellow-400"></i>
+          <h3 class="mt-4 text-lg font-semibold">Flexibilité</h3>
+          <p class="mt-2 text-gray-600">Apprenez à votre propre rythme et selon votre emploi du temps.</p>
         </div>
       </div>
     </div>
@@ -51,13 +104,27 @@
   <section id="about" class="py-16 bg-gray-100">
     <div class="container mx-auto flex flex-col md:flex-row items-center">
       <div class="w-full md:w-1/2 mb-8 md:mb-0">
-        <img src="/Images/Edutrak.png" alt="About Us" class="rounded-lg shadow-lg">
+        <img src="/Images/Edutrak.png" alt="About Us" class="rounded-lg shadow-lg transition-transform transform hover:scale-105">
       </div>
       <div class="w-full md:w-1/2 md:pl-10">
         <h2 class="text-3xl font-bold text-gray-900">Nous sommes Edutrak</h2>
         <p class="mt-4 text-gray-700">
-          SkillHarbor vous accueille chaleureusement dans votre destination privilégiée pour votre réussite.
+          Edutrak vous offre une plateforme de formation innovante qui permet aux étudiants d'accéder à des cours interactifs et personnalisés, adaptés à leurs besoins.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map Section -->
+  <section id="map" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-10">Notre Localisation</h2>
+      <div class="w-full h-80">
+        <!-- Google Map Iframe Embed -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.171657288344!2d-122.39997268468213!3d37.78533407975826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809d63a71a97%3A0x20c3da5ef6b4378d!2s1600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA+94043%2C+USA!5e0!3m2!1sen!2sin!4v1673033578541!5m2!1sen!2sin"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
@@ -67,4 +134,3 @@
     <span>Created By <a href="#" class="text-yellow-400 hover:text-yellow-500">Edutrak</a> | &copy; 2024 All Rights Reserved</span>
   </footer>
 </div>
-

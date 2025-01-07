@@ -1,6 +1,4 @@
-
 <div class="bg-gray-50">
-
   <!-- Hero Section -->
   <div class="relative">
     <video autoplay loop muted playsinline class="w-full h-screen object-cover">
@@ -9,12 +7,13 @@
     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
       <div class="text-center text-white">
         <h1 class="text-5xl font-bold">Bonjour !</h1>
-        <a href="#services" class="mt-4 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg">Consulter cours</a>
+        <a href="#services" class="mt-4 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:bg-blue-600 transform hover:scale-105">Consulter cours</a>
+        <!-- Cooler Add Course Button -->
+        <a href="#services" class="mt-4 inline-block bg-green-500 text-white px-6 py-3 rounded-lg transition duration-300 hover:bg-green-600 transform hover:scale-105 hover:rotate-6">Ajouter un Cours</a>
       </div>
     </div>
   </div>
 
-  
   <!-- Services Section -->
   <section id="services" class="py-16 bg-gray-100">
     <div class="container mx-auto px-4">
@@ -35,6 +34,28 @@
           <h3 class="text-xl font-bold mb-2">Marketing</h3>
           <a href="cree-profile.php" class="text-blue-500 hover:underline">En savoir plus</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add Course Section (Hidden) -->
+  <section id="add-course" class="py-16 bg-gray-200 hidden">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-500 mb-8">Ajouter un Cours</h2>
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <form>
+          <div class="mb-4">
+            <label for="course-name" class="block text-gray-700">Nom du Cours</label>
+            <input type="text" id="course-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg" placeholder="Entrez le nom du cours">
+          </div>
+          <div class="mb-4">
+            <label for="course-description" class="block text-gray-700">Description</label>
+            <textarea id="course-description" class="w-full px-4 py-2 border border-gray-300 rounded-lg" placeholder="Entrez la description du cours"></textarea>
+          </div>
+          <div class="mb-4">
+            <button type="submit" class="w-full bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">Ajouter le Cours</button>
+          </div>
+        </form>
       </div>
     </div>
   </section>
@@ -88,6 +109,4 @@
       <p>Created By <a href="#" class="text-blue-500">Edutrak</a> | &#169; 2024 All Rights Reserved</p>
     </div>
   </footer>
-
 </div>
-
